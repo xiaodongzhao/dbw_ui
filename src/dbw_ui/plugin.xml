@@ -1,0 +1,16 @@
+<library path="src">
+  <class name="DBW UI" type="dbw_ui.plugin_dbw_ui.DbwUiPlugin" base_class_type="rqt_gui_py::Plugin">
+    <description>
+      rqt plugin to view DBW
+    </description>
+    <qtgui>
+      <group>
+        <label>Visualization</label>
+      </group>
+   
+      <label>dbw_ui</label>
+      <icon type="theme">system-help</icon>
+      <statustip>rqt plugin to view DBW</statustip>
+    </qtgui>
+  </class>
+</library>

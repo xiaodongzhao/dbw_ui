@@ -1,0 +1,93 @@
+{
+    "dataspeed_ulc_msgs/UlcReport/steering_mode": {
+        "YAW_RATE_MODE": 0,
+        "CURVATURE_MODE": 1
+    },
+    "dataspeed_ulc_msgs/UlcReport/tracking_mode": {
+        "LOOSE_TRACKING_MODE": 0,
+        "TIGHT_TRACKING_MODE": 1
+    },
+    "dbw_mkz_msgs/Gear/gear": {
+        "NONE": 0,
+        "PARK": 1,
+        "REVERSE": 2,
+        "NEUTRAL": 3,
+        "DRIVE": 4,
+        "LOW": 5
+    },
+    "dbw_mkz_msgs/GearNum/num": {
+        "NONE": 0,
+        "DRIVE_D01": 1,
+        "DRIVE_D02": 2,
+        "DRIVE_D03": 3,
+        "DRIVE_D04": 4,
+        "DRIVE_D05": 5,
+        "DRIVE_D06": 6,
+        "DRIVE_D07": 7,
+        "DRIVE_D08": 8,
+        "DRIVE_D09": 9,
+        "DRIVE_D10": 10,
+        "NEUTRAL": 16,
+        "REVERSE_R01": 17,
+        "REVERSE_R02": 18,
+        "PARK": 31
+    },
+    "dbw_mkz_msgs/GearReject/value": {
+        "NONE": 0,
+        "SHIFT_IN_PROGRESS": 1,
+        "OVERRIDE": 2,
+        "ROTARY_LOW": 3,
+        "ROTARY_PARK": 4,
+        "VEHICLE": 5
+    },
+    "dbw_mkz_msgs/HillStartAssist/mode": {
+        "MODE_OFF": 0,
+        "MODE_AUTO": 1,
+        "MODE_MANUAL": 2,
+        "MODE_UNDEFINED": 3
+    },
+    "dbw_mkz_msgs/HillStartAssist/status": {
+        "STAT_INACTIVE": 0,
+        "STAT_FINDING_GRADIENT": 1,
+        "STAT_ACTIVE_PRESSED": 2,
+        "STAT_ACTIVE_RELEASED": 3,
+        "STAT_FAST_RELEASE": 4,
+        "STAT_SLOW_RELEASE": 5,
+        "STAT_FAILED": 6,
+        "STAT_UNDEFINED": 7
+    },
+    "dbw_mkz_msgs/ParkingBrake/status": {
+        "OFF": 0,
+        "TRANS": 1,
+        "ON": 2,
+        "FAULT": 3
+    },
+    "dbw_mkz_msgs/QualityFactor/value": {
+        "OK": 0,
+        "EMPTY": 1,
+        "CORRUPT": 2,
+        "FAULT": 3
+    },
+    "dbw_mkz_msgs/SteeringReport/steering_wheel_cmd_type": {
+        "CMD_ANGLE": 0,
+        "CMD_TORQUE": 1
+    },
+    "dbw_mkz_msgs/WatchdogCounter/source": {
+        "NONE": 0,
+        "OTHER_BRAKE": 1,
+        "OTHER_THROTTLE": 2,
+        "OTHER_STEERING": 3,
+        "BRAKE_COUNTER": 4,
+        "BRAKE_DISABLED": 5,
+        "BRAKE_COMMAND": 6,
+        "BRAKE_REPORT": 7,
+        "THROTTLE_COUNTER": 8,
+        "THROTTLE_DISABLED": 9,
+        "THROTTLE_COMMAND": 10,
+        "THROTTLE_REPORT": 11,
+        "STEERING_COUNTER": 12,
+        "STEERING_DISABLED": 13,
+        "STEERING_COMMAND": 14,
+        "STEERING_REPORT": 15
+    }
+}
