@@ -11,7 +11,7 @@ from qt_gui.plugin import Plugin
 from QtWidgets import QWidget
 from QtGui import QPalette, QColor
 
-from dbw_mkz_msgs.msg import TurnSignalCmd, GearCmd, GearReport, ThrottleCmd, ThrottleReport, ThrottleInfoReport, BrakeCmd, BrakeInfoReport, BrakeReport, SteeringCmd, SteeringReport
+from dbw_mkz_msgs.msg import MiscCmd, GearCmd, GearReport, ThrottleCmd, ThrottleReport, ThrottleInfoReport, BrakeCmd, BrakeInfoReport, BrakeReport, SteeringCmd, SteeringReport
 from dataspeed_ulc_msgs.msg import UlcReport, UlcCmd
 from std_msgs.msg import Bool, Empty
 
@@ -77,12 +77,12 @@ class DbwUiPlugin(Plugin):
             int].connect(self.throttle_cmd_type_changed)
 
         # turn signal
-        self.cmd_pubs["TurnSignalCmd"] = rospy.Publisher(ns +
+        self.cmd_pubs["MiscCmd"] = rospy.Publisher(ns +
                                                          "/turn_signal_cmd",
-                                                         TurnSignalCmd,
+                                                         MiscCmd,
                                                          queue_size=1)
-        self._window.TurnSignalCmd_start.clicked.connect(
-            lambda checked, source="TurnSignalCmd": self.cmd_start(source))
+        self._window.MiscCmd_start.clicked.connect(
+            lambda checked, source="MiscCmd": self.cmd_start(source))
 
         # dbw
         self.dbw_enabled_status = False
